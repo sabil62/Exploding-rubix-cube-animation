@@ -3,14 +3,6 @@ function setup() {
   angleMode(DEGREES);
 }
 
-// const faces = [
-//   [0, 0, 0, "255, 0, 0"],
-//   [0, 90, 0, "0, 255, 0"],
-//   [0, 180, 0, "255, 0, 0"],
-//   [0, -90, 0, "0, 255, 0"],
-//   [90, 0, 0, "0, 0, 255"],
-//   [270, 0, 0, "0, 0, 255"],
-// ];
 const edgeLength = 180;
 const explodeFactor = 1.2;
 const animationFrames = 300;
