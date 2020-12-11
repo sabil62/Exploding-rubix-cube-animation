@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(500, 500, WEBGL);
+  createCanvas(700, 600, WEBGL);
   angleMode(DEGREES);
 }
 
@@ -9,13 +9,13 @@ const animationFrames = 300;
 
 function draw() {
   const first_animation = min(frameCount / animationFrames, 1);
-  background("lightblue");
+  background(10, 10, 20);
   noStroke();
   rotateY(frameCount / 2);
   rotateX(frameCount / 6);
   //------------------------------------------------------------
   //white
-  fill("rgba(255, 255, 255, 0.7)");
+  fill("rgba(255, 255, 255,0.8)");
   push();
   rotateX(90 * first_animation);
   translate(0, 0, (side_lenght / 2) * explosion * first_animation);
@@ -130,7 +130,7 @@ function draw() {
 
   //------------------------------------------------------------
   //yellow
-  fill("rgba(255,255,0, 0.7)");
+  fill("rgba(255,255,0,0.8)");
   push();
   rotateX(270 * first_animation);
   translate(0, 0, (side_lenght / 2) * explosion * first_animation);
@@ -245,7 +245,7 @@ function draw() {
 
   //----------------------------------------------------
   //green
-  fill("rgba(0,255,0, 0.7)");
+  fill("rgba(0,255,0,0.8)");
   push();
   rotateY(90 * first_animation);
   translate(0, 0, (side_lenght / 2) * explosion * first_animation);
@@ -361,7 +361,7 @@ function draw() {
   //------------------------------------------------------------------
   //------------------------------------------------------------
   //red
-  fill("rgba(255,0,0, 0.7)");
+  fill("rgba(255,0,0,0.8)");
   push();
   rotateY(180 * first_animation);
   translate(0, 0, (side_lenght / 2) * explosion * first_animation);
@@ -477,7 +477,7 @@ function draw() {
   //------------------------------------------------------------
   //blue
 
-  fill("rgba(0,0,255, 0.7)");
+  fill("rgba(0,0,255,0.8)");
   push();
   rotateY(-90 * first_animation);
   translate(0, 0, (side_lenght / 2) * explosion * first_animation);
@@ -592,7 +592,7 @@ function draw() {
 
   //------------------------------------------------------------
   //orange
-  fill("rgba(255,165,0, 0.7)");
+  fill("rgba(255,165,0,0.8)");
   push();
   translate(0, 0, (side_lenght / 2) * explosion * first_animation);
   plane(55);
